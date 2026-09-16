@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Portfolio | Home</title>
+    <style>
+        /* Base Reset & Colors */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ff6600; /* Vibrant Orange Background */
+            color: #ffffff; /* Crisp White Text */
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #000000; /* Black Accent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-container a:hover, 
+        .nav-container a.active {
+            color: #ff6600; /* Orange active/hover accent */
+        }
+
+        /* Responsive Header Banner */
+        .banner-container {
+            max-width: 1100px;
+            height: 350px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 3px solid #000000;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Main Page Layout Container */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Black Content Card Container */
+        .profile-card {
+            background-color: #000000; /* Black Content Card */
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 2px solid #ffffff; /* Contrast border for separation from black accents */
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        /* Profile Image Styles */
+        .profile-image-wrapper {
+            flex: 0 0 250px;
+        }
+
+        .profile-image-wrapper img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #ff6600; /* Orange border ring */
+        }
+
+        /* Right Side Text Block */
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-text h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+        }
+
+        .profile-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-image-wrapper {
+                flex: 0 0 auto;
+            }
+
+            .profile-text h1 {
+                border-bottom: none;
+            }
+
+            .banner-container {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="active">Home</a>
+            <a href="photoshop.html">Photoshop</a>
+            <a href="illustrator.html">Illustrator</a>
+            <a href="premiere.html">Premiere Pro Videos</a>
+            <a href="animation.html">Animation</a>
+            <a href="final.html">Final Project</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner-container">
+        <img src="Henbest-Tanner Clip MAsk.jpg" alt="Multimedia Project Banner Image">
+    </header>
+
+    <!-- Page Layout Container -->
+    <main>
+        <section class="profile-card">
+            
+            <!-- Left Side: Profile Image -->
+            <div class="profile-image-wrapper">
+                <img src="me.jpg" alt="My Profile Photo">
+            </div>
+
+            <!-- Right Side: About Me & Paragraphs -->
+            <div class="profile-text">
+                <h1>My Multimedia Journey</h1>
+                
+                <!-- Paragraph 1: Portfolio Purpose Placeholder -->
+                <p>
+                    <!-- INSERT TEXT HERE: Explain the purpose of this portfolio and how it showcases the skills you have learned throughout your Multimedia class. -->
+                     I have more knowledge on Photoshop and how to use the tools to create different images and projects. It is a great way to show your creativity and things you like to do. This class has given me a better understanding on Photoshop and what Multimedia is.  
+                </p>
+                
+                <!-- Paragraph 2: Skills and Goals Placeholder -->
+                <p>
+                    <!-- INSERT TEXT HERE: Detail your current digital media skills and talk about what specific tools or techniques you plan to learn next in this class. -->
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
