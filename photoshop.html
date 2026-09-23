@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Portfolio | Photoshop Projects</title>
+    <style>
+        /* Base Reset & Colors */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ff6600; /* Vibrant Orange Background */
+            color: #ffffff; /* Crisp White Text */
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #000000; /* Black Accent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-container a:hover, 
+        .nav-container a.active {
+            color: #ff6600; /* Orange active/hover accent */
+        }
+
+        /* Responsive Header Banner */
+        .banner-container {
+            max-width: 1100px;
+            height: 350px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 3px solid #000000;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Main Page Layout Container */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Page Introduction Heading */
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px 0 30px 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        /* Project Grid Layout */
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Black Content Card Container (Matched from Index Page) */
+        .project-card {
+            background-color: #000000; /* Black Content Card */
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 2px solid #ffffff; /* Contrast border for separation from black accents */
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        /* Project Image Styles */
+        .project-image-wrapper {
+            flex: 0 0 400px;
+            max-width: 400px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 4px solid #ff6600; /* Orange border ring */
+        }
+
+        .project-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* Right Side Text Block */
+        .project-text {
+            flex: 1;
+        }
+
+        .project-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+        }
+
+        .project-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        .project-text strong {
+            color: #ff6600;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .project-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .project-image-wrapper {
+                flex: 0 0 auto;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .project-text h2 {
+                border-bottom: none;
+            }
+
+            .banner-container {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="photoshop.html" class="active">Photoshop</a>
+            <a href="illustrator.html">Illustrator</a>
+            <a href="premiere.html">Premiere Pro Videos</a>
+            <a href="animation.html">Animation</a>
+            <a href="final.html">Final Project</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner-container">
+        <img src="Henbest-Tanner Clip MAsk.jpg" alt="Multimedia Project Banner Image">
+    </header>
+
+    <!-- Page Layout Container -->
+    <main>
+        
+        <h1 class="page-title">Photoshop Showcase</h1>
+
+        <div class="project-grid">
+
+            <!-- Card 1: Henbest-Tanner Clip MAsk.jpg -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Henbest-Tanner Clip MAsk.jpg" alt="Photoshop Clipping Mask Project">
+                </div>
+                <div class="project-text">
+                    <h2>Clipping Mask Project</h2>
+                    <p>
+                        <strong>Why I chose this image:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                    </p>
+                    <p>
+                        <strong>Photoshop skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 2: Henbest-Tanner-combining.png -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Henbest-Tanner-combining.png" alt="Photoshop Image Combining Project">
+                </div>
+                <div class="project-text">
+                    <h2>Image Combining Project</h2>
+                    <p>
+                        <strong>Why I chose this image:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                    </p>
+                    <p>
+                        <strong>Photoshop skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 3: Henbest-Tanner-Image text.png -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Henbest-Tanner-Image text.png" alt="Photoshop Image and Text Project">
+                </div>
+                <div class="project-text">
+                    <h2>Image & Text Design</h2>
+                    <p>
+                        <strong>Why I chose this image:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                    </p>
+                    <p>
+                        <strong>Photoshop skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 4: Taste.png -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Taste.png" alt="Photoshop Taste Project">
+                </div>
+                <div class="project-text">
+                    <h2>Taste Graphic Project</h2>
+                    <p>
+                        <strong>Why I chose this image:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                    </p>
+                    <p>
+                        <strong>Photoshop skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 5: Hoco.png -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Hoco.png" alt="Photoshop Homecoming Project">
+                </div>
+                <div class="project-text">
+                    <h2>Homecoming Design</h2>
+                    <p>
+                        <strong>Why I chose this image:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                    </p>
+                    <p>
+                        <strong>Photoshop skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
