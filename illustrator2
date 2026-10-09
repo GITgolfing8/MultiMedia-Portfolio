@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Portfolio | Photoshop Projects</title>
+    <style>
+        /* Base Reset & Colors */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ff6600; /* Vibrant Orange Background */
+            color: #ffffff; /* Crisp White Text */
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #000000; /* Black Accent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-container a:hover, 
+        .nav-container a.active {
+            color: #ff6600; /* Orange active/hover accent */
+        }
+
+        /* Responsive Header Banner */
+        .banner-container {
+            max-width: 1100px;
+            height: 350px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 3px solid #000000;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Main Page Layout Container */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Page Introduction Heading */
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px 0 30px 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        /* Project Grid Layout */
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Black Content Card Container (Matched from Index Page) */
+        .project-card {
+            background-color: #000000; /* Black Content Card */
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 2px solid #ffffff; /* Contrast border for separation from black accents */
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        /* Project Image Styles */
+        .project-image-wrapper {
+            flex: 0 0 400px;
+            max-width: 400px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 4px solid #ff6600; /* Orange border ring */
+        }
+
+        .project-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* Right Side Text Block */
+        .project-text {
+            flex: 1;
+        }
+
+        .project-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+        }
+
+        .project-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        .project-text strong {
+            color: #ff6600;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .project-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .project-image-wrapper {
+                flex: 0 0 auto;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .project-text h2 {
+                border-bottom: none;
+            }
+
+            .banner-container {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" >Home</a>
+            <a href="photoshop.html">Photoshop</a>
+            <a href="illustrator.html" class="active">Illustrator</a>
+            <a href="premiere.html">Premiere Pro Videos</a>
+            <a href="animation.html">Animation</a>
+            <a href="final.html">Final Project</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner-container">
+        <img src="Henbest-Tanner Clip MAsk.jpg" alt="Multimedia Project Banner Image">
+    </header>
+
+    <!-- Page Layout Container -->
+    <main>
+        
+        <h1 class="page-title">Photoshop Showcase</h1>
+
+        <div class="project-grid">
+
+            <!-- Card 1: Henbest-Tanner Clip MAsk.jpg -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Pumpkin shape.png" alt="Illustrator Pumpkin">
+                </div>
+                <div class="project-text">
+                    <h2>Pumpkin shape</h2>
+                    <p>
+                        <strong>Why I chose this image:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                        I chose this image because we were designing our own pumpkin in class. You got to choose the color and the shapes you got to use.
+                    </p>
+                    <p>
+                        <strong>Illustrator skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                        The Photoshop skills I used to create this image is the elipse tool. The star tool I then changed to have 3 side. The pen tool to create the mouth. And the gradient tool to show the different colors to really give the pumpkin a accurate depiction.
+                </div>
+            </section>
+
+            <!-- Card 2: Henbest-Tanner-combining.png -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="Tanner-Henbest.jpg" alt="Illustrator brush image">
+                </div>
+                <div class="project-text">
+                    <h2>Illustrator brush image</h2>
+                    <p>
+                        <strong>Why I chose this image:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                         I chose this image because it was a good image to be creative on. I have this picture form when I was golfing at Belvedere Golf Course in Charlevoix, Michigan this past summer.
+                    </p>
+                    <p>
+                        <strong> Illustrator skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                        The IllustraTOR skills I used to create this image is the brush tool as well as the pen tool to give the image a creative version that the plain image by it's self.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 3: Henbest-Tanner-Image text.png -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="tannerhenbestanimal.jpg" alt="Illustrator animal">
+                </div>
+                <div class="project-text">
+                    <h2>Illustrator animal</h2>
+                    <p>
+                        <strong>Why I chose this animal:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image?  -->
+                        I chose this animal because it would be fun to create it. I liked giving this bug a good and accurate look.
+                    </p>
+                    <p>
+                        <strong>Illustrator skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                        The Illustrator skills I used for this image was the elipse tool. I used the pen tool as well as the brush tool for this project.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 4: Taste.png -->
+            <section class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="logo-Tanner-Henbest.pdf" alt="Illustrator log">
+                </div>
+                <div class="project-text">
+                    <h2>illustrator logo</h2>
+                    <p>
+                        <strong>Why I chose this logo:</strong> 
+                        <!-- INSERT TEXT HERE: Why did you choose this image? -->
+                         I chose this logo because it would give a good look. I made the logo with my initials to represent my name.
+                    </p>
+                    <p>
+                        <strong>Illustrator skills used:</strong> 
+                        <!-- INSERT TEXT HERE: What photoshop skills did you use? -->
+                        The Illustrator skills I used were the elipse tool as well as star tool and the text tool.
+                    </p>
+                </div>
+            </section>
+
+
+        </div>
+    </main>
+
+</body>
+</html>
