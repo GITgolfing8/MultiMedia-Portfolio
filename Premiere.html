@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Portfolio | Premiere Pro Videos</title>
+    <style>
+        /* Base Reset & Colors */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ff6600; /* Vibrant Orange Background */
+            color: #ffffff; /* Crisp White Text */
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #000000; /* Black Accent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .nav-container a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-container a:hover, .nav-container a.active {
+            color: #ff6600; /* Orange active/hover accent */
+        }
+
+        /* Responsive Header Banner */
+        .banner-container {
+            max-width: 1100px;
+            height: 350px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 3px solid #000000;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Main Page Layout Container */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Page Introduction Heading */
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px 0 30px 0;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        }
+
+        /* Project Grid Layout */
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        /* Black Content Card Container */
+        .project-card {
+            background-color: #000000; /* Black Content Card */
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+            border: 2px solid #ffffff; /* Contrast border for separation from black accents */
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        /* Project Video Styles (16:9 Aspect Ratio) */
+        .project-video-wrapper {
+            flex: 0 0 420px;
+            max-width: 420px;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 4px solid #ff6600; /* Orange border ring */
+            background-color: #111111;
+            aspect-ratio: 16 / 9;
+        }
+
+        .project-video-wrapper iframe,
+        .project-video-wrapper video {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* Right Side Text Block */
+        .project-text {
+            flex: 1;
+        }
+
+        .project-text h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 5px;
+        }
+
+        .project-text p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        .project-text strong {
+            color: #ff6600;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 768px) {
+            .project-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .project-video-wrapper {
+                flex: 0 0 auto;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .project-text h2 {
+                border-bottom: none;
+            }
+
+            .banner-container {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">Home</a>
+            <a href="photoshop.html">Photoshop</a>
+            <a href="illustrator.html">Illustrator</a>
+            <a href="premiere.html" class="active">Premiere Pro Videos</a>
+            <a href="animation.html">Animation</a>
+            <a href="final.html">Final Project</a>
+        </div>
+    </nav>
+
+    <!-- Header Banner -->
+    <header class="banner-container">
+        <img src="Henbest-Tanner Clip MAsk.jpg" alt="Multimedia Project Banner Image">
+    </header>
+
+    <!-- Page Layout Container -->
+    <main>
+        <h1 class="page-title">Premiere Pro Showcase</h1>
+
+        <div class="project-grid">
+
+            <!-- Card 1: Henbest-Tanner-Movieproject.mp4 -->
+            <section class="project-card">
+                <div class="project-video-wrapper">
+                    <!-- Google Drive Preview Embed -->
+                    <iframe src="https://google.com" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                <div class="project-text">
+                    <h2>Movie Project</h2>
+                    <p>
+                        <strong>About this video:</strong> 
+                        <!-- INSERT 2 SENTENCES HERE DESCRIBING THE VIDEO -->
+                        Write your first sentence describing what happens in your movie project here. Write your second sentence explaining the story, theme, or Premiere Pro editing techniques you used.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 2: Henbest-TannerZack-king_1.mp4 -->
+            <section class="project-card">
+                <div class="project-video-wrapper">
+                    <!-- Google Drive Preview Embed -->
+                    <iframe src="https://google.com" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                </div>
+                <div class="project-text">
+                    <h2>Zach King Magic Edit</h2>
+                    <p>
+                        <strong>About this video:</strong> 
+                        <!-- INSERT 2 SENTENCES HERE DESCRIBING THE VIDEO -->
+                        Write your first sentence describing the illusion or trick shown in this video here. Write your second sentence explaining how you timed the cuts and transitions in Premiere Pro to make the effect seamless.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Card 3: TannerHowTo.mp4 -->
+            <section class="project-card">
+                <div class="project-video-wrapper">
+                    <!-- Plays local TannerHowTo.mp4 from the same folder. 
+                         If you upload this to Google Drive too, replace the <video> tag below with:
+                         <iframe src="YOUR_GOOGLE_DRIVE_PREVIEW_LINK" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                    <video controls>
+                        <source src="TannerHowTo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="project-text">
+                    <h2>How-To Tutorial Video</h2>
+                    <p>
+                        <strong>About this video:</strong> 
+                        <!-- INSERT 2 SENTENCES HERE DESCRIBING THE VIDEO -->
+                        Write your first sentence explaining what skill or process you teach in this how-to video here. Write your second sentence describing the camera angles, titles, or audio edits you added to make the steps clear.
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
